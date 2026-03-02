@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: test-docker2
+    restart: unless-stopped
+    networks:
+      - nginx-network
+
+networks:
+  nginx-network:
+    external: true
