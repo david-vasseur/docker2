@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.prod
-    container_name: test-docker2
+    container_name: ez-task
     restart: unless-stopped
     networks:
       - nginx-network
